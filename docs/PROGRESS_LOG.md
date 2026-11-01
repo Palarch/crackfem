@@ -249,3 +249,19 @@ Explain-back questions: (1) Why does the one-element result fall toward the inta
 Explain-back questions: (1) Why must η at w + u be below the 5 % point of the Monte Carlo band? (2) Why is the end-point interval about 2/1.645 times as wide as the 5–95 % band? (3) Why can a squashed public history not keep the commit hashes quoted in the log?
 
 **Reviewed by student:** pending.
+
+## Entry 10 — Browser demo for the instructor (2026-11-01)
+
+**Planned:** a link the instructor can open and try without installing anything: set a crack width, see η, the stiffness along the span and the truck deflection.
+
+**Found:** the saved results already hold the width–response rows of every model (figure 15), but the grillage was solved at only 14 values of η per girder, too coarse to move a slider through. One grillage point near decompression (G3, η ≈ 0.595) did not converge with the default secant update.
+
+**Changed & why:** `scripts/build_demo_data.py` re-solves the single girder at 81 values of η and the grillage at 31 per cracked girder (G1, G3) and writes `docs/demo_data.js`; a grillage point that does not converge is retried once with relax 0.5 and otherwise dropped and listed (none was dropped). `docs/index.html` is one page with no library: a crack-width slider and a GSD choice, three result cards (η with the w ± u band, truck deflection against L/800), the stiffness ratio of every element along the span, the width–deflection curves with the refused strip and the blind zone, and the stage-B moment of each girder. It interpolates between solved points and runs no FEM. GitHub Pages serves it from `main`/`docs`. `tests/test_demo_data.py` checks the page's interpolation against the saved results.
+
+**Numbers:** at w = 0.16 mm and GSD 0.02 the page gives η 0.361 (band 0.334–0.390), 0.287 (G1) and 0.353 (G3), truck deflection 72.0, 21.8 and 9.2 mm; a refused 0.03 mm reading gives η ≥ 0.439, as `stage1.json` (case1). Data export 322 s. `python -m pytest -q` → 424 passed (420 + 4 new). Checked in the browser at desktop and phone width, light and dark. xray on the page text: clean.
+
+**Reading guide:** `atWidth` and `evaluate` in `docs/index.html` (the interpolation and the band) → `eta_at` in `tests/test_demo_data.py` (the same interpolation in Python) → `grillage_models` in `scripts/build_demo_data.py`.
+
+Explain-back questions: (1) Why can the page show a deflection band without running the FEM? (2) Why is the band of a refused reading one-sided? (3) Why does the curve jump at zero width?
+
+**Reviewed by student:** pending.

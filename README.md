@@ -2,6 +2,12 @@
 
 01203541 Finite Element Analysis of Structures, Kasetsart University, 2026 · Palid Archavachalee (6914500959)
 
+**Try it in the browser, no install:** <https://palarch.github.io/crackfem/>. Set a measured crack
+width and see the remaining prestress η, the stiffness along the span and the truck deflection of
+the single girder and of the five-girder grillage, against L/800.
+
+**Report:** [`report/crackfem_report_SUBMISSION_CANDIDATE.pdf`](report/crackfem_report_SUBMISSION_CANDIDATE.pdf) (26 pages).
+
 A measured crack width on a prestressed bridge girder is turned into a mechanical statement:
 how much prestress is left (η), how stiff the girder still is along the span, and how far it
 deflects under the design truck — with an uncertainty band from the measurement. Crack widths
@@ -30,7 +36,9 @@ Python 3.11 or newer (developed and tested on 3.13).
 
 `run_all.py` regenerates `results/stage1.json` and fig1–fig8 in `results/figures/`, and
 `run_stage2.py` (about 7 minutes) regenerates `results/stage2.json` and fig9–fig14, both from the
-committed pipeline outputs in `data/claimbridge/`; neither needs the private pipeline. The three
+committed pipeline outputs in `data/claimbridge/`; neither needs the private pipeline.
+`python scripts/build_demo_data.py` re-solves the models for the browser demo and rewrites
+`docs/demo_data.js`; the demo page itself (`docs/index.html`) runs no FEM. The three
 tests that call the pipeline are skipped unless a pipeline configuration is available (next
 section), and `scripts/run_claimbridge.py` (re-measuring the synthetic masks) needs it too.
 
@@ -59,6 +67,7 @@ the command that runs the pipeline is configured per machine. To run the live te
 - `pipeline.example.json` — placeholder for the per-machine pipeline configuration
 - `data/claimbridge/` — synthetic crack masks and the parsed pipeline reports
 - `results/` — generated numbers and figures
+- `docs/index.html`, `docs/demo_data.js` — the browser demo published with GitHub Pages
 
 ## Where to read
 

@@ -4,6 +4,8 @@ ClaimBridge is the background thesis work and the upstream measurement source: i
 
 ## Read these first
 
+Quickest look, no install: <https://palarch.github.io/crackfem/> (browser demo; set a crack width and see η, stiffness and truck deflection; values interpolated between FEM solutions saved by `scripts/build_demo_data.py`).
+
 1. `report/crackfem_report_SUBMISSION_CANDIDATE.pdf` — main report.
 2. `results/key_results.csv` — compact comparison of measured cases in the single-girder, exterior-girder and interior-girder models.
    `results/proposal_checks.json` with figures 15–17 — the proposal's Expected Outcomes 2 and 3 and the hand calculation (report Section 8, Appendix B); `docs/PROPOSAL_COMPLIANCE_AUDIT.md` ends with their status.
@@ -27,4 +29,4 @@ python scripts/build_submission_assets.py
 
 ## Submission status
 
-The technical outputs and report candidate are assembled (1 November 2026: 420 tests pass, report 26 pages). The candidate files are renamed as final only after the student completes `report/STUDENT_REVIEW.md` and the pending `Reviewed by student` lines in `docs/PROGRESS_LOG.md`; the GitHub URL goes on the hand-in form. No field-data or capacity claim should be added without independent evidence.
+The technical outputs and report candidate are assembled (1 November 2026: 424 tests pass, report 26 pages; browser demo at https://palarch.github.io/crackfem/). The candidate files are renamed as final only after the student completes `report/STUDENT_REVIEW.md` and the pending `Reviewed by student` lines in `docs/PROGRESS_LOG.md`; the GitHub URL goes on the hand-in form. No field-data or capacity claim should be added without independent evidence.

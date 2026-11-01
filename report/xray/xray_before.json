@@ -1,0 +1,384 @@
+{
+ "verdict": "BLOCKED",
+ "findings": [
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "para 62",
+   "excerpt": "…s work-equivalent nodal loads {f0}.",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "para 76",
+   "excerpt": "…lides showed that the slides' {f0} is the equivalent load itself…",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "para 76",
+   "excerpt": "…alent load itself, so f_eq = +{f0} and the fixed-end reactions a…",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "para 76",
+   "excerpt": "… the fixed-end reactions are −{f0};",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "table 6 row 3",
+   "excerpt": "…| work-equivalent nodal loads {f0}; {f} = [k]{d} − {f0} | Ch. 3 …",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "table 6 row 3",
+   "excerpt": "…-equivalent nodal loads {f0}; {f} = [k]{d} − {f0} | Ch. 3 slide…",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "table 6 row 3",
+   "excerpt": "…nt nodal loads {f0}; {f} = [k]{d} − {f0} | Ch. 3 slides 3-8 to …",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "placeholder-var",
+   "tier": "BLOCKER",
+   "loc": "table 6 row 3",
+   "excerpt": "…al loads {f0}; {f} = [k]{d} − {f0} | Ch. 3 slides 3-8 to 3-10; L…",
+   "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
+   "hint": "แทนด้วยค่าจริง"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 36",
+   "excerpt": "3 Block 0 — Design review (6–7 October)",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 42",
+   "excerpt": "4 Block 1 — Source pack (7 October)",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 50",
+   "excerpt": "5 Block 2 — Stage 1 core: one girder (7–1…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 54",
+   "excerpt": "…ecision, 12 October). Stage A — prestress, girder and wet sla…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 54",
+   "excerpt": "…restress, girder and wet slab — acts on the bare girder; stag…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 54",
+   "excerpt": "…s on the bare girder; stage B — wearing surface, barriers and…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 54",
+   "excerpt": "…g surface, barriers and truck — acts on the composite girder.…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 80",
+   "excerpt": "6 Block 3 — Link to the thesis pipeline a…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 98",
+   "excerpt": "Figure 1 — Predicted crack width at rest…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 100",
+   "excerpt": "Figure 2 — All 12 synthetic cases: Monte…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 102",
+   "excerpt": "Figure 3 — Stage-1 girder: deflection un…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 104",
+   "excerpt": "Figure 4 — Stage-1 girder: secant EI / u…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 106",
+   "excerpt": "Figure 5 — Sensitivity of the η estimate…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 113",
+   "excerpt": "7 Blocks 4–5 — Stage 2: the grillage of the …",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 141",
+   "excerpt": "Figure 6 — Predicted crack width at rest…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 143",
+   "excerpt": "Figure 7 — G1 cracked at η = 0.287: stag…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 145",
+   "excerpt": "Figure 8 — G1 cracked at η = 0.287: truc…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 147",
+   "excerpt": "Figure 9 — Secant iteration on the grill…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 149",
+   "excerpt": "Figure 10 — Grillage mesh study: relative…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 188",
+   "excerpt": "…inite Element Method, 5th ed. — §4.1–4.4 (beam element, equiv…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 190",
+   "excerpt": "… 2: Background & Applications — Worked Examples, EUR 26566 EN…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 190",
+   "excerpt": "…Examples, EUR 26566 EN (2014) — EC2 §7.3.4 crack-width equati…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 191",
+   "excerpt": "… Eurocode 2 Commentary (2017) — Example 7.3; strand modulus.",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 192",
+   "excerpt": "5.\tSétra, Eurocode 2 — Application to Concrete Highw…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 192",
+   "excerpt": "…ncrete Highway Bridges (2007) — EC2 Eq. 7.10 and Table 6.2.",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 193",
+   "excerpt": "6.\tMancini, EC2: Concrete — Case Study, JRC Eurocodes cam…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 193",
+   "excerpt": "…JRC Eurocodes campaign (2011) — EC2 §7.4.3 stiffness interpol…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 195",
+   "excerpt": "…ign Manual, Appendix B (2011) — AASHTO Type IV girder.",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 196",
+   "excerpt": "…Report 0-4751-1 Vol. 2 (2006) — AASHTO Standard Specification…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 197",
+   "excerpt": "…CHRP Report 776, Appendix D.1 — grillage torsion constants af…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 198",
+   "excerpt": "… NCHRP Web Document 46 (2002) — L/800 live-load deflection li…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 199",
+   "excerpt": "… Project, Final Report (2000) — DOH standard HS20-44 × 1.30.",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 200",
+   "excerpt": "…ngineering Journal 6(1), 2016 — Thai I-girder bridges, AASHTO…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 201",
+   "excerpt": "… flexural members\", CSCE 2018 — Branson's equation.",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 202",
+   "excerpt": "…ython finite element library) — independent check of the line…",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 203",
+   "excerpt": "Appendix A — Reproducing the results",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 206",
+   "excerpt": "python -m pytest -q — 401 tests (3 skipped without …",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 207",
+   "excerpt": "python scripts/run_all.py — Stage 1: results/stage1.json …",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  },
+  {
+   "rule_id": "em-dash",
+   "tier": "TELL",
+   "loc": "para 208",
+   "excerpt": "python scripts/run_stage2.py — Stage 2: results/stage2.json …",
+   "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
+   "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
+  }
+ ],
+ "warnings": [],
+ "render": [],
+ "render_message": null
+}

@@ -1,0 +1,52 @@
+{
+  "case": {
+    "name": "case2_gsd0p38",
+    "eta_true": 0.36,
+    "w_true_mm": 0.16119731380898447,
+    "gsd_mm": 0.38,
+    "width_px": 1
+  },
+  "parsed": {
+    "gsd_mm": 0.38,
+    "min_measurable_mm": 1.14,
+    "cracks": [
+      {
+        "index": 1,
+        "points": 400,
+        "refused_points": 0,
+        "flagged_points": 0,
+        "gate": "below-measurable-resolution",
+        "max_width_px": null,
+        "max_width_mm": null,
+        "uncertainty_mm": null,
+        "rating": null,
+        "rating_label": null
+      },
+      {
+        "index": 2,
+        "points": 400,
+        "refused_points": 0,
+        "flagged_points": 0,
+        "gate": "below-measurable-resolution",
+        "max_width_px": null,
+        "max_width_mm": null,
+        "uncertainty_mm": null,
+        "rating": null,
+        "rating_label": null
+      },
+      {
+        "index": 3,
+        "points": 400,
+        "refused_points": 0,
+        "flagged_points": 0,
+        "gate": "below-measurable-resolution",
+        "max_width_px": null,
+        "max_width_mm": null,
+        "uncertainty_mm": null,
+        "rating": null,
+        "rating_label": null
+      }
+    ]
+  },
+  "raw": "GSD:       0.3800 mm/px  (min measurable width 1.14 mm)\n--- crack 1: 400 pts (0 refused, 0 flagged)\n    REFUSED: below-measurable-resolution\n--- crack 2: 400 pts (0 refused, 0 flagged)\n    REFUSED: below-measurable-resolution\n--- crack 3: 400 pts (0 refused, 0 flagged)\n    REFUSED: below-measurable-resolution"
+}

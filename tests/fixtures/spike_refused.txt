@@ -1,0 +1,5 @@
+Mask:      mask.png
+Surface:   s.json
+GSD:       0.3800 mm/px  (min measurable width 1.14 mm)
+--- crack 1: 390 pts (0 refused, 0 flagged)
+    REFUSED: below-measurable-resolution

@@ -1,0 +1,6 @@
+Mask:      mask.png
+Surface:   s.json
+GSD:       0.0500 mm/px  (min measurable width 0.15 mm)
+--- crack 1: 394 pts (0 refused, 0 flagged)
+    max width: 6.00 px = 0.30 ± 0.10 mm
+    DOH rating (rule engine): 5 — ดีมาก (Excellent)

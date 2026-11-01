@@ -1,0 +1,8 @@
+{
+  "render_size_px": 1,
+  "meters_per_pixel_x": 5e-05,
+  "meters_per_pixel_y": 5e-05,
+  "mapping_outputs": {
+    "xyz_npy": "case2_gsd0p05_surface_xyz.npy"
+  }
+}

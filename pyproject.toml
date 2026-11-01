@@ -1,0 +1,9 @@
+[project]
+name = "crackfem"
+version = "0.1.0"
+description = "Crack-width-informed prestress and stiffness indicator (FEM course project)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

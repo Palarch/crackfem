@@ -1,0 +1,4 @@
+{
+  "cwd": "<directory from which the pipeline's crack-width command is run>",
+  "argv": ["<executable>", "<arguments that select the crack-width measurement command>"]
+}

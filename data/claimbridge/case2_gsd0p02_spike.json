@@ -1,0 +1,52 @@
+{
+  "case": {
+    "name": "case2_gsd0p02",
+    "eta_true": 0.36,
+    "w_true_mm": 0.16119731380898447,
+    "gsd_mm": 0.02,
+    "width_px": 8
+  },
+  "parsed": {
+    "gsd_mm": 0.02,
+    "min_measurable_mm": 0.06,
+    "cracks": [
+      {
+        "index": 1,
+        "points": 392,
+        "refused_points": 0,
+        "flagged_points": 0,
+        "gate": "ok",
+        "max_width_px": 8.0,
+        "max_width_mm": 0.16,
+        "uncertainty_mm": 0.04,
+        "rating": "5",
+        "rating_label": "ดีมาก (Excellent)"
+      },
+      {
+        "index": 2,
+        "points": 392,
+        "refused_points": 0,
+        "flagged_points": 0,
+        "gate": "ok",
+        "max_width_px": 8.0,
+        "max_width_mm": 0.16,
+        "uncertainty_mm": 0.04,
+        "rating": "5",
+        "rating_label": "ดีมาก (Excellent)"
+      },
+      {
+        "index": 3,
+        "points": 392,
+        "refused_points": 0,
+        "flagged_points": 0,
+        "gate": "ok",
+        "max_width_px": 8.0,
+        "max_width_mm": 0.16,
+        "uncertainty_mm": 0.04,
+        "rating": "5",
+        "rating_label": "ดีมาก (Excellent)"
+      }
+    ]
+  },
+  "raw": "GSD:       0.0200 mm/px  (min measurable width 0.06 mm)\n--- crack 1: 392 pts (0 refused, 0 flagged)\n    max width: 8.00 px = 0.16 ± 0.04 mm\n    DOH rating (rule engine): 5 — ดีมาก (Excellent)\n--- crack 2: 392 pts (0 refused, 0 flagged)\n    max width: 8.00 px = 0.16 ± 0.04 mm\n    DOH rating (rule engine): 5 — ดีมาก (Excellent)\n--- crack 3: 392 pts (0 refused, 0 flagged)\n    max width: 8.00 px = 0.16 ± 0.04 mm\n    DOH rating (rule engine): 5 — ดีมาก (Excellent)"
+}

@@ -1,0 +1,16 @@
+model,case,gsd_mm_per_px,width_mm,uncertainty_plus_minus_mm,eta_point,eta_p05,eta_p50,eta_p95,mc_samples_used,mc_samples_dropped,evidence_scope
+Stage 1 single girder,case2_gsd0p02,0.02,0.16,0.04,0.36082843653422536,0.33827252064472196,0.3605200544489904,0.384542524522188,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 1 single girder,case2_gsd0p05,0.05,0.15,0.1,0.36780543616812206,0.312480501056997,0.36696480076797405,0.4331322200842447,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 1 single girder,case3_gsd0p02,0.02,0.4,0.04,0.2148005118627792,0.19628730478782894,0.21455190683596706,0.23352143121025412,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 1 single girder,case3_gsd0p05,0.05,0.4,0.1,0.2148005118627792,0.16888454436121966,0.2141790603492313,0.26220370021824985,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 1 single girder,case3_gsd0p10,0.1,0.4,0.2,0.2148005118627792,0.12394485750226342,0.21355547367876185,0.31243723122883227,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G1 exterior,case2_gsd0p02,0.02,0.16,0.04,0.2871011346378156,0.26303723555494746,0.28680392658827103,0.31351186278652426,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G1 exterior,case2_gsd0p05,0.05,0.15,0.1,0.2947292463674309,0.23626967284325165,0.29384994479937715,0.37432712087864517,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G1 exterior,case3_gsd0p02,0.02,0.4,0.04,0.13822107151870333,0.11976264641540102,0.13798148077802172,0.1567623540666724,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G1 exterior,case3_gsd0p05,0.05,0.4,0.1,0.13822107151870333,0.09267970573391963,0.1376135668627563,0.18529827421455983,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G1 exterior,case3_gsd0p10,0.1,0.4,0.2,0.13822107151870333,0.04966975055537443,0.13733207335158687,0.23626570453848394,1991,9,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G3 interior,case2_gsd0p02,0.02,0.16,0.04,0.35309057097317786,0.3301469294297391,0.35280905025796244,0.37808264086596355,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G3 interior,case2_gsd0p05,0.05,0.15,0.1,0.36031212250985695,0.3043379193092115,0.3594471822653251,0.43392965773286835,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G3 interior,case3_gsd0p02,0.02,0.4,0.04,0.20932576420942106,0.19166216670453462,0.20909200180456616,0.22727878291648834,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G3 interior,case3_gsd0p05,0.05,0.4,0.1,0.20932576420942106,0.16561414333977995,0.20873675526753266,0.25495390261619355,2000,0,synthetic mask; measurement noise only; stand-in structure
+Stage 2 G3 interior,case3_gsd0p10,0.1,0.4,0.2,0.20932576420942106,0.12321915655514622,0.2081426043864168,0.304294816754565,2000,0,synthetic mask; measurement noise only; stand-in structure

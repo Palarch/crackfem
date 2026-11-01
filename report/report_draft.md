@@ -1,7 +1,7 @@
 % TITLE: From a Measured Crack Width to Remaining Prestress, Stiffness and Load Sharing
 % SUBTITLE: An FEM–AI structural indicator for a prestressed girder bridge (CPK72, span S01)
 % META: 01203541 Finite Element Analysis of Structures · Kasetsart University · 1st semester 2026
-% META: Course project (solo, 15 %, CLO9 "AI + FEM") · Progress report
+% META: Course project · Progress report
 % META: Palid Archavachalee (6914500959)
 % META: 1 November 2026 · code, tests and results: https://github.com/Palarch/crackfem
 

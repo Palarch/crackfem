@@ -350,6 +350,7 @@ def main() -> None:
     doc = Document(SOURCE)
     md = MARKDOWN.read_text(encoding="utf-8").splitlines()
     replace_start(doc, "Repository: STUDENT: GitHub link", f"1 November 2026 · code, tests and results: {REPOSITORY}")
+    replace_start(doc, "Course project (solo", "Course project · Progress report")
     replace_start(
         doc,
         "A bridge inspection rates a crack by its width",

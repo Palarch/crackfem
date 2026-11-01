@@ -4,7 +4,7 @@
   {
    "rule_id": "placeholder-var",
    "tier": "BLOCKER",
-   "loc": "para 112",
+   "loc": "para 114",
    "excerpt": "…s work-equivalent nodal loads {f0}.",
    "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
    "hint": "แทนด้วยค่าจริง"
@@ -12,7 +12,7 @@
   {
    "rule_id": "placeholder-var",
    "tier": "BLOCKER",
-   "loc": "para 126",
+   "loc": "para 128",
    "excerpt": "…lides showed that the slides' {f0} is the equivalent load itself…",
    "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
    "hint": "แทนด้วยค่าจริง"
@@ -20,7 +20,7 @@
   {
    "rule_id": "placeholder-var",
    "tier": "BLOCKER",
-   "loc": "para 126",
+   "loc": "para 128",
    "excerpt": "…alent load itself, so f_eq = +{f0} and the fixed-end reactions a…",
    "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
    "hint": "แทนด้วยค่าจริง"
@@ -28,7 +28,7 @@
   {
    "rule_id": "placeholder-var",
    "tier": "BLOCKER",
-   "loc": "para 126",
+   "loc": "para 128",
    "excerpt": "… the fixed-end reactions are −{f0};",
    "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
    "hint": "แทนด้วยค่าจริง"
@@ -68,7 +68,7 @@
   {
    "rule_id": "placeholder-var",
    "tier": "BLOCKER",
-   "loc": "para 297",
+   "loc": "para 299",
    "excerpt": "…ector. For the downward load, {f} = [−qLe/2, −qLe²/12, −qLe/2, …",
    "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
    "hint": "แทนด้วยค่าจริง"
@@ -76,7 +76,7 @@
   {
    "rule_id": "placeholder-var",
    "tier": "BLOCKER",
-   "loc": "para 297",
+   "loc": "para 299",
    "excerpt": "…ads of the course notes, f = +{f0}.",
    "why": "ตัวแปร template ที่ยังไม่ได้แทนค่า",
    "hint": "แทนด้วยค่าจริง"
@@ -84,7 +84,7 @@
   {
    "rule_id": "em-dash",
    "tier": "TELL",
-   "loc": "para 271",
+   "loc": "para 273",
    "excerpt": "… 2: Background & Applications — Worked Examples, EUR 26566 EN…",
    "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
    "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
@@ -92,7 +92,7 @@
   {
    "rule_id": "em-dash",
    "tier": "TELL",
-   "loc": "para 273",
+   "loc": "para 275",
    "excerpt": "5.\tSétra, Eurocode 2 — Application to Concrete Highw…",
    "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
    "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"
@@ -100,7 +100,7 @@
   {
    "rule_id": "em-dash",
    "tier": "TELL",
-   "loc": "para 274",
+   "loc": "para 276",
    "excerpt": "6.\tMancini, EC2: Concrete — Case Study, JRC Eurocodes cam…",
    "why": "em dash เป็นสัญญาณ AI ที่เห็นชัดที่สุด",
    "hint": "ใช้ , ; : หรือ → หรือแยกเป็นสองประโยค"

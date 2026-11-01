@@ -53,6 +53,17 @@ def test_tidy_tables_sizes_equal_columns_and_keeps_rows_whole():
         assert all(bool(p.paragraph_format.keep_with_next) == (r == 0) for c in row.cells for p in c.paragraphs)
 
 
+def test_cover_carries_the_headline_figure_before_the_contents():
+    doc = docx.Document()
+    doc.add_paragraph("A title", style="Title")
+    doc.add_paragraph("Summary", style="Heading 1")
+    bsr.add_cover_and_contents(doc)
+    paragraphs = doc.paragraphs
+    assert [p.text for p in paragraphs][2:4] == [bsr.COVER_CAPTION, "Contents"]
+    assert [k for k, p in enumerate(paragraphs) if p._p.xpath(".//pic:pic")] == [1]
+    assert paragraphs[3].paragraph_format.page_break_before      # the figure stays on the cover page
+
+
 def test_render_writes_headings_lists_tables_and_figures_in_order():
     doc = docx.Document()
     anchor = doc.add_paragraph("END")

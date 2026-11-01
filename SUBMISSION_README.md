@@ -29,4 +29,4 @@ python scripts/build_submission_assets.py
 
 ## Submission status
 
-Final submission, 1 November 2026: 424 tests pass, report 26 pages, browser demo at https://palarch.github.io/crackfem/. The student declared the review complete on 1 November 2026 (`report/STUDENT_REVIEW.md`, and the `Reviewed by student` lines in `docs/PROGRESS_LOG.md`). No field-data or capacity claim should be added without independent evidence.
+Final submission, 1 November 2026: 425 tests pass, report 26 pages with the headline figure on the cover, browser demo at https://palarch.github.io/crackfem/. The student declared the review complete on 1 November 2026 (`report/STUDENT_REVIEW.md`, and the `Reviewed by student` lines in `docs/PROGRESS_LOG.md`). No field-data or capacity claim should be added without independent evidence.

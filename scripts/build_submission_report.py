@@ -24,13 +24,16 @@ SOURCE = ROOT / "report" / "crackfem_report_DRAFT.docx"
 OUTPUT = ROOT / "report" / "crackfem_report_FINAL.docx"
 WORKFLOW = ROOT / "results" / "figures" / "fig0_workflow.png"
 MARKDOWN = ROOT / "report" / "report_draft.md"
-TESTS = "424"                 # python -m pytest -q, 1 November 2026, with the private pipeline
+TESTS = "425"                 # python -m pytest -q, 1 November 2026, with the private pipeline
 TESTS_DATE = "1 November 2026"
 REPOSITORY = "https://github.com/Palarch/crackfem"
 SECTION_8 = "# 8 Block 6: Closing the proposal's outcomes (24 October)"
 PROGRESS = "**Progress at a glance.**"
 LEADS = ("Planned:", "Found:", "Changed and why:", "Numbers:")
-COVER_SPACE = Pt(150)
+COVER_SPACE = Pt(90)
+COVER_FIGURE = ROOT / "results" / "figures" / "fig15_width_deflection.png"
+COVER_CAPTION = ("Truck deflection at midspan against the crack width measured at rest: one girder, and girders "
+                 "G1 and G3 of the grillage (Figure 11, Section 8.1).")
 APPENDIX_B = "# Appendix B: Hand calculation of one beam element"
 RENUMBER = ("13 Student decisions", "12 Conclusions", "11 Limitations", "10 Discussion", "9 Verification summary",
             "8 Where FEM sits")
@@ -227,8 +230,8 @@ def tidy_tables(doc: Document) -> None:
 
 
 def add_cover_and_contents(doc: Document) -> None:
-    """The title block alone on page 1 (no page number), then a contents page whose TOC field
-    Word fills when the PDF is exported, then the Summary on a new page."""
+    """The title block and the headline figure alone on page 1 (no page number), then a contents
+    page whose TOC field Word fills when the PDF is exported, then the Summary on a new page."""
     title = doc.paragraphs[0]
     if title.style.name != "Title":
         raise RuntimeError("the draft must open with its Title paragraph")
@@ -240,6 +243,17 @@ def add_cover_and_contents(doc: Document) -> None:
     heading.style = "TOC Heading"
     heading.paragraph_format.page_break_before = True
     heading.add_run("Contents")
+    picture = Paragraph(OxmlElement("w:p"), summary._parent)
+    heading._p.addprevious(picture._p)
+    picture.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    picture.paragraph_format.space_before = Pt(36)
+    picture.paragraph_format.keep_with_next = True
+    picture.add_run().add_picture(str(COVER_FIGURE), width=Inches(6.0))
+    caption = Paragraph(OxmlElement("w:p"), summary._parent)
+    heading._p.addprevious(caption._p)
+    caption.style = "Caption"
+    caption.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    caption.add_run(COVER_CAPTION)
     toc = Paragraph(OxmlElement("w:p"), summary._parent)
     summary._p.addprevious(toc._p)
     for kind, text in (("begin", None), ("instr", 'TOC \\o "1-2" \\h \\z \\u'), ("separate", None),

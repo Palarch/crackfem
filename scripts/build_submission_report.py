@@ -1,4 +1,4 @@
-"""Build the Word submission candidate from the reviewed draft.
+"""Build the Word submission report from the reviewed draft.
 
 This packaging script uses the existing formatted DOCX as its template. Run it with a Python
 environment that provides python-docx (the numerical project itself does not depend on it).
@@ -21,10 +21,10 @@ from docx.shared import Emu, Inches, Pt
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "report" / "crackfem_report_DRAFT.docx"
-OUTPUT = ROOT / "report" / "crackfem_report_SUBMISSION_CANDIDATE.docx"
+OUTPUT = ROOT / "report" / "crackfem_report_FINAL.docx"
 WORKFLOW = ROOT / "results" / "figures" / "fig0_workflow.png"
 MARKDOWN = ROOT / "report" / "report_draft.md"
-TESTS = "420"                 # python -m pytest -q, 1 November 2026, with the private pipeline
+TESTS = "424"                 # python -m pytest -q, 1 November 2026, with the private pipeline
 TESTS_DATE = "1 November 2026"
 REPOSITORY = "https://github.com/Palarch/crackfem"
 SECTION_8 = "# 8 Block 6: Closing the proposal's outcomes (24 October)"
@@ -209,7 +209,7 @@ def _row_flag(row, tag: str) -> None:
 
 def tidy_tables(doc: Document) -> None:
     """Columns sized by their text where the draft left them equal, no row split across a page,
-    and the header row repeated after a page break."""
+    and the header row repeated after a page break and never left alone at the foot of a page."""
     for table in doc.tables:
         if len({cell.width for cell in table.rows[0].cells}) == 1:
             widths = column_widths([[cell.text for cell in row.cells] for row in table.rows])
@@ -221,6 +221,9 @@ def tidy_tables(doc: Document) -> None:
             _row_flag(row, "w:cantSplit")
             if r == 0:
                 _row_flag(row, "w:tblHeader")
+                for cell in row.cells:
+                    for paragraph in cell.paragraphs:
+                        paragraph.paragraph_format.keep_with_next = True
 
 
 def add_cover_and_contents(doc: Document) -> None:
@@ -319,6 +322,9 @@ def add_block6(doc: Document) -> None:
     bullet = insert_after(stage2, style="List Bullet")
     add_runs(bullet, "`python scripts/run_proposal_checks.py`: Block 6: `results/proposal_checks.json` and figures "
                      "15–17 (about 3 minutes; it reads stage1.json and stage2.json)")
+    demo = insert_after(bullet, style="List Bullet")
+    add_runs(demo, "`python scripts/build_demo_data.py`: the data of the browser demo, `docs/demo_data.js` (about "
+                   "5 minutes); the demo itself is at https://palarch.github.io/crackfem/ and runs no FEM")
     both = find_start(doc, "Both scripts start from the committed")
     both.runs[0].text = both.runs[0].text.replace("Both scripts", "The first two scripts", 1)
     if not (fifth.text.startswith("5.\t") and both.text.startswith("The first two scripts")
@@ -436,9 +442,9 @@ def main() -> None:
         "design (DECISIONS 2026-10-07), because the final exam fell in the middle of the project. The student "
         "made the engineering decisions recorded as ‘student decision’ in the log, including staged "
         "construction and the DOH truck factor. Each block in docs/PROGRESS_LOG.md ends with a reading guide, "
-        "three explain-back questions and a ‘Reviewed by student’ line. Those lines remain pending until the "
-        "review record in Section 14 is completed; the report does not treat AI authorship or automated tests "
-        "as a substitute for that review.",
+        "three explain-back questions and a ‘Reviewed by student’ line. The student declared the review complete "
+        "on 1 November 2026 (Section 14). The report text was drafted by Claude from the progress log and the "
+        "decision journal; the decisions marked as the student's are the student's.",
     )
     replace_start(
         doc,
@@ -484,9 +490,8 @@ def main() -> None:
         "The implementation was produced with AI assistance, so submission requires a separate oral and code "
         "review by the student. The review record is report/STUDENT_REVIEW.md. It covers the beam and grid "
         "elements, assembly and partition, the secant loop, the inverse, the uncertainty statement, and the "
-        "distinction between a synthetic consistency check and field validation. The report becomes the final "
-        "submission only after that record and the corresponding ‘Reviewed by student’ lines in "
-        "docs/PROGRESS_LOG.md are completed truthfully.",
+        "distinction between a synthetic consistency check and field validation. The student declared the "
+        "review complete on 1 November 2026; the review record states which answers were written down.",
     )
     replace_start(
         doc,

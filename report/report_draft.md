@@ -19,7 +19,7 @@ The report follows the work block by block, as it happened. The approved proposa
 - The structural model matters more than the camera at fine resolution: the same crack gives η = 0.361 on the single girder and 0.287 on the exterior girder of the grillage, and at the same η the single girder deflects 72.1 mm under the truck (2.4 times the L/800 limit of 30.6 mm) where the grillage girder deflects 20.4 mm (inside the limit), because the grillage girder sheds about two thirds of its load to its neighbours.
 - Putting all the damage in one element, as the proposal planned, makes the answer depend on the mesh: at η = 0.36 one element gives 27.1 mm of truck deflection at N = 10 (inside L/800) and 14.2 mm at N = 40, where the model with a cracked zone set by the moments gives 72.1 mm at every mesh.
 
-The code (Python, 420 automated tests) was written by Claude (Anthropic's AI). The student's final code and oral review is recorded separately before submission; Section 1.4 states the arrangement.
+The code (Python, 424 automated tests) was written by Claude (Anthropic's AI). The student's final code and oral review is recorded separately before submission; Section 1.4 states the arrangement.
 
 # 1 Introduction
 
@@ -54,11 +54,11 @@ The course asked for a report that tells the progress as it happened. Sections 3
 | 3 Pipeline link | 12–13 Oct | synthetic cracks through the real pipeline; Monte Carlo band | blind zone above η = 0.557; nothing measurable at GSD 0.38 mm/px; η = 0.338–0.385 at 0.02 | 256 | 6 |
 | 4–5 Grillage | 15 Oct | the five-girder deck, a real secant loop, the inverse on G1 and G3 | the same crack gives η = 0.287 on G1; the L/800 verdict reverses | 401 | 7 |
 | 6 Proposal outcomes | 18–24 Oct | close every promise of the proposal | width–response curves, one element against a damaged zone, hand calculation, compliance table | 416 | 8 |
-| Closing | 1 Nov | the last audit items and the final build | w ± u end points beside the Monte Carlo band; report, repository and review record | 420 | 8.1, 14 |
+| Closing | 1 Nov | the last audit items and the final build | w ± u end points beside the Monte Carlo band; report, repository, browser demo and review record | 424 | 8.1, 14 |
 
 ## 1.4 Authorship
 
-The code was written by Claude (Anthropic's AI); this was the student's choice at the start of the design (DECISIONS 2026-10-07), because the final exam fell in the middle of the project. The student made the engineering decisions recorded as "student decision" in the log, including staged construction and the DOH truck factor. Each block in `docs/PROGRESS_LOG.md` ends with a reading guide, three explain-back questions and a `Reviewed by student` line. Those lines remain pending until the review record in Section 14 is completed; the report does not treat AI authorship or automated tests as a substitute for that review.
+The code was written by Claude (Anthropic's AI); this was the student's choice at the start of the design (DECISIONS 2026-10-07), because the final exam fell in the middle of the project. The student made the engineering decisions recorded as "student decision" in the log, including staged construction and the DOH truck factor. Each block in `docs/PROGRESS_LOG.md` ends with a reading guide, three explain-back questions and a `Reviewed by student` line. The student declared the review complete on 1 November 2026 (Section 14). The report text was drafted by Claude from the progress log and the decision journal; the decisions marked as the student's are the student's.
 
 # 2 Starting point: the approved proposal
 
@@ -348,7 +348,7 @@ Appendix B works one element of the Stage-1 girder by hand with N = 10: the 4 ×
 | Check: w → 0 gives the uncracked solution; a very wide crack stops softening | η = 1 gives the linear uncracked solution (test); w = 0 holds for every η from η_dec to 1, so a zero width does not identify an intact girder (blind zone); the ratios flatten at 0.100 – 0.113 above w = 0.4 mm | 6.2, 8.1 | Delivered; the blind zone is a finding |
 | Case study: CPK72 S01, 24.5 m, illustrative section | span and supports from the DOH drawing; stand-in AASHTO Type IV composite girder and deck, every value tagged | 4 | Delivered as a stand-in case |
 
-**Numbers:** 420 tests pass with the private pipeline configured (3 of them need it and are skipped without it). `run_proposal_checks.py` runs in about 3 minutes.
+**Numbers:** 424 tests pass with the private pipeline configured (3 of them need it and are skipped without it). `run_proposal_checks.py` runs in about 3 minutes.
 
 # 9 Where FEM sits in the project
 
@@ -380,7 +380,7 @@ The concrete physics meets the FE model in one place: the stiffness function han
 | Mesh | N = 10 – 160 (girder), 10 – 80 (grillage) | below 0.1 % (girder); w_pred 1e-5, G1 deflection 1.2 % (grillage) |
 | Hand calculation, one element (Appendix B) | 12EI/L³ … 4EI/L, qL/2 and qL²/12 by hand; 5qL⁴/384EI; qL/2 | equal to the code; deflection and reactions to 1e-9 |
 | Damage option of the Stage-1 girder | damage everywhere = distributed model; no damage = linear uncracked solution | to 1e-12 and 1e-9 |
-| Whole code | 420 automated tests | all pass |
+| Whole code | 424 automated tests | all pass |
 
 # 11 Discussion
 
@@ -420,7 +420,7 @@ For a bridge owner, the present output should be read as a screening indicator r
 
 The student made three material engineering decisions recorded during the project: staged construction was retained, the HS20-44 load was multiplied by the DOH factor 1.30, and the whole-deck grillage became the main result while the single girder remained the fallback and comparison model. These choices changed the decompression threshold, service response and interpretation of the same measured crack.
 
-The implementation was produced with AI assistance, so submission requires a separate oral and code review by the student. The review record is `report/STUDENT_REVIEW.md`. It covers the beam and grid elements, assembly and partition, the secant loop, the inverse, the uncertainty statement, and the distinction between a synthetic consistency check and field validation. The report becomes the final submission only after that record and the corresponding `Reviewed by student` lines in `docs/PROGRESS_LOG.md` are completed truthfully.
+The implementation was produced with AI assistance, so submission requires a separate oral and code review by the student. The review record is `report/STUDENT_REVIEW.md`. It covers the beam and grid elements, assembly and partition, the secant loop, the inverse, the uncertainty statement, and the distinction between a synthetic consistency check and field validation. The student declared the review complete on 1 November 2026; the review record states which answers were written down.
 
 # References
 
@@ -447,10 +447,11 @@ Full source table with clauses, pages and links: `docs/sources.md` (S01–S30). 
 Python 3.11 or newer.
 
 - `python -m pip install -r requirements.txt`
-- `python -m pytest -q`: 420 passed with the configured private pipeline (captured 1 November 2026); without that configuration the 3 live-pipeline tests are skipped
+- `python -m pytest -q`: 424 passed with the configured private pipeline (captured 1 November 2026); without that configuration the 3 live-pipeline tests are skipped
 - `python scripts/run_all.py`: Stage 1: `results/stage1.json` and figures 1–8 (about 75 s)
 - `python scripts/run_stage2.py`: Stage 2: `results/stage2.json` and figures 9–14 (about 7 minutes)
 - `python scripts/run_proposal_checks.py`: Block 6: `results/proposal_checks.json` and figures 15–17 (about 3 minutes; it reads stage1.json and stage2.json)
+- `python scripts/build_demo_data.py`: the data of the browser demo, `docs/demo_data.js` (about 5 minutes); the demo itself is at https://palarch.github.io/crackfem/ and runs no FEM
 
 The first two scripts start from the committed pipeline outputs in `data/claimbridge/`, so neither needs the private pipeline. The design document (`docs/superpowers/specs/`), the two implementation plans (`docs/superpowers/plans/`), the progress log, the source table and the decision journal are in `docs/`.
 

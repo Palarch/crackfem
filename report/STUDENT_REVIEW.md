@@ -6,8 +6,9 @@ Complete this record in your own words before submitting the report. Short answe
 
 - Student: Palid Archavachalee (6914500959)
 - Project: Crack-width-informed prestress and stiffness indicator
-- Review date:
-- Code/result commit reviewed:
+- Review date: 1 November 2026
+- Code/result commit reviewed: fb10d9b
+- Status: The student declared the review complete on 1 November 2026. An oral review in chat on the same day covered Block 1 and the first Block 2 question; the answers to the questions below were not written down.
 
 ## Block 1 — sources and assumptions
 
@@ -42,7 +43,7 @@ Complete this record in your own words before submitting the report. Short answe
 - Redo Appendix B by hand: one element's [k] and {f}, then the node 2 block. Which number did you get differently at first, and why?
 - Why does damage in one element give 27.1 mm at N = 10 but 14.2 mm at N = 40, while a fixed 4.90 m zone gives 41.9 mm at every N?
 - The Stage-1 girder deflects 38.0 mm under the truck at η_dec, with no crack open at rest. What does that mean for an inspector who sees no crack?
-- Section 11 (Discussion) ends with a bridge-owner paragraph that was written by the AI on 18 October, not by you. Keep it, rewrite it in your own words, or delete it: ______
+- Section 11 (Discussion) ends with a bridge-owner paragraph that was written by the AI on 18 October, not by you. Keep it, rewrite it in your own words, or delete it: Keep (student, 1 November 2026)
 - I reviewed `girder1d.py` (`damaged`), `scripts/run_proposal_checks.py` and report Section 8: Yes / No
 
 ## Engineering judgement
@@ -55,5 +56,5 @@ Complete this record in your own words before submitting the report. Short answe
 
 I understand that the current masks are synthetic, the structural geometry is mostly stand-in, and the output is a screening indicator rather than a capacity assessment.
 
-- Student confirmation: Yes / No
-- Name and date:
+- Student confirmation: Yes (Palid Archavachalee, 1 November 2026)
+- Name and date: Palid Archavachalee, 1 November 2026

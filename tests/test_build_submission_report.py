@@ -49,6 +49,8 @@ def test_tidy_tables_sizes_equal_columns_and_keeps_rows_whole():
         tr_pr = row._tr.trPr
         assert tr_pr.find(bsr.qn("w:cantSplit")) is not None
         assert (tr_pr.find(bsr.qn("w:tblHeader")) is not None) == (r == 0)
+        # the header row is kept with the first data row
+        assert all(bool(p.paragraph_format.keep_with_next) == (r == 0) for c in row.cells for p in c.paragraphs)
 
 
 def test_render_writes_headings_lists_tables_and_figures_in_order():

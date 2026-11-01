@@ -42,7 +42,7 @@ Numbers come only from `results/*.json` or test output. The code is written by C
 - All three are now traceable to an opened source, and the dead load is in the same AASHTO family as the live load (DECISIONS 2026-10-07, B1).
 **Numbers:** see docs/sources.md.
 **Reading guide:** skim sources.md; rows tagged [stand-in] are the assumptions the examiner may question.
-**Reviewed by student:** pending (after 2026-10-19).
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 2 — B2 Stage-1 core (2026-10-07 → 2026-10-12)
 
@@ -58,7 +58,7 @@ Numbers come only from `results/*.json` or test output. The code is written by C
 **Changed & why:** staged construction adopted (student decision 2026-10-12; measured shift +0.06 in the soffit-decompression η, +0.10 for the same girder; an earlier estimate of 0.15 mixed two inconsistent assumptions — see DECISIONS 2026-10-12 G09 review); HS20-44 × 1.30 applied (student decision 2026-10-12); the truck scan adds the exact kink placements (an axle at midspan or at a support) because the 1 mm grid can miss the peak; the secant loop also checks the stiffness residual before stopping, because a moment-only criterion can stop with an EI that belongs to other moments when stiffness jumps at Mcr; the inverse finds the decompression edge by bisection, checks the residual after Illinois so a jump in w_pred gives a bound instead of a fake point estimate, treats w ≤ 1 nm as no crack and refuses NaN; two plan test errors corrected in Task 13 (round-off bound 1e-9 instead of 1e-12, vertical reactions only in the force check) — all in DECISIONS 2026-10-12.
 **Numbers:** `python -m pytest -q` → 165 passed, 0 skipped.
 **Reading guide:** read in this order: elements.py → model.py → solve.py → nonlinear.py (the course part), then section.py → staging.py → crackwidth.py → stiffness.py → girder1d.py (the physics). Explain-back: (1) why are the nodal deflections exact for any N? (2) why does the secant loop stop after one pass here? (3) why does the slab carry no stress from its own weight, and what does that change in the crack width at rest?
-**Reviewed by student:** pending (after 2026-10-19).
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 3 — B3 thesis-pipeline link, Monte Carlo, Stage-1 results (2026-10-12)
 
@@ -114,7 +114,7 @@ Numbers come only from `results/*.json` or test output. The code is written by C
 
 Explain-back questions: (1) Why does a 0.15 mm crack at rest mean prestress was lost, when the same crack in an RC beam is harmless? (2) Why can the field GSD (0.38 mm/px) not support this indicator, and what does a refusal at GSD 0.02 mm/px still tell you? (3) Why does the Monte Carlo band widen with GSD, and at GSD 0.02 mm/px what would narrow the η estimate more — a finer camera or the as-built drawings (compare fig5 with fig8)?
 
-**Reviewed by student:** pending (after 2026-10-19).
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 4 — B4–B5 Stage-2 grillage of S01 (2026-10-15)
 
@@ -178,7 +178,7 @@ Explain-back questions: (1) Why does a 0.15 mm crack at rest mean prestress was 
 
 Explain-back questions: (1) Why does the secant loop need more than one pass on the grillage when it needed exactly one on the single girder? (2) The same crack width gives a different η on G1, on G3 and on the Stage-1 girder (fig9, fig10): which model differences cause that? (3) When G1 cracks, G2 takes part of its moment: what does that do to G2's zero-tension design, and what would you check on the real bridge?
 
-**Reviewed by student:** pending (after 2026-10-22).
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 5 — B6 submission packaging and report QA (2026-10-18)
 
@@ -192,7 +192,7 @@ Explain-back questions: (1) Why does the secant loop need more than one pass on 
 
 **Reading guide:** start with `SUBMISSION_README.md`, then `results/key_results.csv`, then the report. Use `results/run_record.json` to identify the code and data snapshot. Complete `report/STUDENT_REVIEW.md` before changing the report status from submission candidate to final.
 
-**Reviewed by student:** pending; this line must be completed by the student after the review record is answered.
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 6 — ClaimBridge supervisor background note (2026-10-18)
 
@@ -204,7 +204,7 @@ Explain-back questions: (1) Why does the secant loop need more than one pass on 
 
 **Reading guide:** read the Main point, Sections 2–6, and the Recommended interpretation. Be able to state which part is AI measurement, which part is FEM inference, why the GSD 0.38 mm/px case is refused, and why one width produces different eta values in the single-girder and grillage models.
 
-**Reviewed by student:** pending.
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 7 — Project lineage and FEM deliverable boundary (2026-10-18)
 
@@ -216,7 +216,7 @@ Explain-back questions: (1) Why does the secant loop need more than one pass on 
 
 **Reading guide:** explain the project in three sentences: what existed before the course, what engineering gap remained, and what new FEM outputs close that gap.
 
-**Reviewed by student:** pending.
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 8 — B6 closing the proposal's outcomes (2026-10-24)
 
@@ -232,7 +232,7 @@ Explain-back questions: (1) Why does the secant loop need more than one pass on 
 
 Explain-back questions: (1) Why does the one-element result fall toward the intact deflection as N grows, while the fixed 4.90 m zone does not change? (2) Why can the Stage-1 girder exceed L/800 at η_dec although no crack is open at rest, and why does the grillage girder not? (3) Why is the equivalent uniform α given for the single girder only?
 
-**Reviewed by student:** pending.
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 9 — Closing block before the hand-in (2026-11-01)
 
@@ -248,7 +248,7 @@ Explain-back questions: (1) Why does the one-element result fall toward the inta
 
 Explain-back questions: (1) Why must η at w + u be below the 5 % point of the Monte Carlo band? (2) Why is the end-point interval about 2/1.645 times as wide as the 5–95 % band? (3) Why can a squashed public history not keep the commit hashes quoted in the log?
 
-**Reviewed by student:** pending.
+**Reviewed by student:** declared complete by the student, 1 November 2026.
 
 ## Entry 10 — Browser demo for the instructor (2026-11-01)
 
@@ -264,4 +264,4 @@ Explain-back questions: (1) Why must η at w + u be below the 5 % point of the M
 
 Explain-back questions: (1) Why can the page show a deflection band without running the FEM? (2) Why is the band of a refused reading one-sided? (3) Why does the curve jump at zero width?
 
-**Reviewed by student:** pending.
+**Reviewed by student:** declared complete by the student, 1 November 2026.

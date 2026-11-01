@@ -6,7 +6,7 @@
 width and see the remaining prestress η, the stiffness along the span and the truck deflection of
 the single girder and of the five-girder grillage, against L/800.
 
-**Report:** [`report/crackfem_report_SUBMISSION_CANDIDATE.pdf`](report/crackfem_report_SUBMISSION_CANDIDATE.pdf) (26 pages).
+**Report:** [`report/crackfem_report_FINAL.pdf`](report/crackfem_report_FINAL.pdf) (26 pages).
 
 A measured crack width on a prestressed bridge girder is turned into a mechanical statement:
 how much prestress is left (η), how stiff the girder still is along the span, and how far it
@@ -22,7 +22,7 @@ every girder element follows its own moment, so a cracked girder sheds load to i
 and the inverse for η runs through this indeterminate model for a crack on the exterior girder
 G1 and on the interior girder G3.
 
-The progress report is `report/crackfem_report_SUBMISSION_CANDIDATE.pdf` (with the matching
+The progress report is `report/crackfem_report_FINAL.pdf` (with the matching
 `.docx`); `SUBMISSION_README.md` lists what to read first.
 
 ## Quickstart

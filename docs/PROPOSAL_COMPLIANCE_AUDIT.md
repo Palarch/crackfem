@@ -74,3 +74,10 @@ The audit text above is kept as written on 18 October. Items closed on 24 Octobe
 | 1. Student review record | **Open**: the student chose to finish the build first and do the review last |
 | 6. Deterministic w − u / w + u endpoints | Closed: η solved again at w − u and w + u for all five measured Stage-1 cases (`end_point_rows` in `scripts/run_proposal_checks.py`, report Section 8.1 table); the end points enclose the Monte Carlo 5–95 % band and are about 20 % wider |
 | 7. Regenerate `run_record.json` after the final commit | Open until the publication commit exists; then recorded in a commit of its own (a file cannot hold the hash of the commit that contains it) |
+
+## Status update — 1 November 2026, final
+
+| Item | Status |
+|---|---|
+| 1. Student review record | **Closed by the student's declaration**: the student declared the review complete on 1 November 2026 and asked for no further questions; `report/STUDENT_REVIEW.md` records the declaration, the sign-off and the Discussion decision (keep), and states that the written answers were not recorded. |
+| 7. Regenerate `run_record.json` after the final commit | Closed: recorded for the final commit in a commit of its own. |

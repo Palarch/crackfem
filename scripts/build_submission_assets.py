@@ -115,10 +115,10 @@ def run_record(stage1: dict, stage2: dict, path: Path) -> None:
             "stage2_strands_G1_to_G5": stage2["design"]["n_strands"],
         },
         "verification_captured_2026_11_01": [
-            {"command": "python -m pytest -q", "result": "420 passed", "elapsed_s": 72.48,
+            {"command": "python -m pytest -q", "result": "424 passed", "elapsed_s": 122.25,
              "private_pipeline_config_present": True},
-            {"command": "python -m pytest -q (fresh clone of the published commit)", "result": "417 passed, 3 skipped",
-             "private_pipeline_config_present": False},
+            {"command": "python -m pytest -q (fresh clone of the published commit)", "result": "421 passed, 3 skipped",
+             "elapsed_s": 87.19, "private_pipeline_config_present": False},
         ],
         "scope_warning": "Synthetic masks and stand-in structure; not field validation or a capacity assessment.",
     }

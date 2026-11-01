@@ -1,7 +1,7 @@
 {
-  "created_utc": "2026-11-01T16:09:33.002972+00:00",
-  "repository_head": "82e089bbcd5c1473c97ab8a594148d880e33edc2",
-  "repository_head_short": "82e089b",
+  "created_utc": "2026-11-01T16:19:29.153224+00:00",
+  "repository_head": "f620bde60e45094a15fe77bc162e8b632385fb62",
+  "repository_head_short": "f620bde",
   "working_tree_clean_at_record_time": true,
   "working_tree_entries_at_record_time": [],
   "python": "3.13.3",
@@ -32,13 +32,13 @@
     {
       "command": "python -m pytest -q",
       "result": "425 passed",
-      "elapsed_s": 84.95,
+      "elapsed_s": 85.0,
       "private_pipeline_config_present": true
     },
     {
       "command": "python -m pytest -q (fresh clone of the published commit)",
       "result": "422 passed, 3 skipped",
-      "elapsed_s": 87.01,
+      "elapsed_s": 85.35,
       "private_pipeline_config_present": false
     }
   ],

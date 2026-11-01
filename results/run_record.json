@@ -1,28 +1,18 @@
 {
-  "created_utc": "2026-10-18T01:56:08.215961+00:00",
-  "repository_head": "d02d478f4389ad0177f4ec922f46d9048956ff94",
-  "repository_head_short": "d02d478",
-  "working_tree_clean_at_record_time": false,
-  "working_tree_entries_at_record_time": [
-    "M docs/PROGRESS_LOG.md",
-    " M report/report_draft.md",
-    "?? SUBMISSION_README.md",
-    "?? report/STUDENT_REVIEW.md",
-    "?? report/crackfem_report_SUBMISSION_CANDIDATE.docx",
-    "?? report/crackfem_report_SUBMISSION_CANDIDATE.pdf",
-    "?? results/figures/fig0_workflow.png",
-    "?? results/key_results.csv",
-    "?? results/run_record.json",
-    "?? scripts/build_submission_assets.py",
-    "?? scripts/build_submission_report.py"
-  ],
+  "created_utc": "2026-11-01T12:04:12.477670+00:00",
+  "repository_head": "19ef4e067e04305e3e52a4c92ffc36056b652db6",
+  "repository_head_short": "19ef4e0",
+  "working_tree_clean_at_record_time": true,
+  "working_tree_entries_at_record_time": [],
   "python": "3.13.3",
   "platform": "Windows-11-10.0.26200-SP0",
   "source_results": {
     "stage1": "results/stage1.json",
     "stage2": "results/stage2.json",
+    "proposal_checks": "results/proposal_checks.json",
     "stage1_sha256": "72f7102e4e645e0d8bb12fa62d9fed7574f207518d88929a531b91218dcb2c42",
     "stage2_sha256": "71c76fd4fb3c4d732eb7ce1af189d16e1e65ee3aada2819bbc43af31859b1dfd",
+    "proposal_checks_sha256": "056f9220b92ce5a911096ebcb52c8af77feb986b68c98a9f20a0b59738bd2722",
     "stage1_eta_decompression": 0.5566468036174774,
     "stage1_eta_reference": 0.36,
     "stage2_model": {
@@ -38,11 +28,18 @@
       30
     ]
   },
-  "verification_captured_2026_10_18": {
-    "command": "python -m pytest -q --basetemp <workspace temp>",
-    "result": "401 passed",
-    "elapsed_s": 108.18,
-    "private_pipeline_config_present": true
-  },
+  "verification_captured_2026_11_01": [
+    {
+      "command": "python -m pytest -q",
+      "result": "420 passed",
+      "elapsed_s": 72.48,
+      "private_pipeline_config_present": true
+    },
+    {
+      "command": "python -m pytest -q (fresh clone of the published commit)",
+      "result": "417 passed, 3 skipped",
+      "private_pipeline_config_present": false
+    }
+  ],
   "scope_warning": "Synthetic masks and stand-in structure; not field validation or a capacity assessment."
 }
